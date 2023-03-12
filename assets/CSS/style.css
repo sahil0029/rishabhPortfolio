@@ -1,0 +1,13 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: "Poppins", sans-serif;
+}
+
+:root{
+	--dark: #101010;
+	--dark-grey: #1c1c1c;
+	--light-grey: #848484;
+	--accent: #24987E;
+}
