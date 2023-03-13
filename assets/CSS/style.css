@@ -40,10 +40,43 @@ nav{
 	cursor: pointer;
 }
 
+.landingContainer{
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.landingContent{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.landingContent p{
+	font-size: 20px;
+}
+
+.name{
+	font-size: 75px;
+	color: var(--dark);
+}
+
+
+/* MEDIA QUERIES */
+
 /* 900px */
 @media only screen and (max-width: 900px) {
 	.navbarContainer{
 		width: 75%;
+	}
+	.name{
+		font-size: 50px;
+	}
+	.landingContent p{
+		font-size: 18px;
 	}
 }
 
@@ -52,11 +85,20 @@ nav{
 	.navbarContainer{
 		width: 100%;
 	}
+	.name{
+		font-size: 35px;
+	}
 }
 
 /* 450px */
 @media only screen and (max-width: 600px) {
 	nav{
 		display: none;
+	}
+	.name{
+		font-size: 25px;
+	}
+	.landingContent p{
+		font-size: 14px;
 	}
 }
