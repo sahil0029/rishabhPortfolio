@@ -11,3 +11,52 @@
 	--light-grey: #848484;
 	--accent: #24987E;
 }
+
+nav{
+	position: fixed;
+	width: 100%;
+}
+
+.navbarContainer{
+	display: flex;
+	justify-content: space-between;
+	width: 50%;
+	margin: 0 auto;
+	align-items: center;
+	padding: 15px 0;
+}
+
+.navbarBtn{
+	background-color: transparent;
+	border: none;
+	padding-bottom: 7px;
+	font-size: 18px;
+}
+
+.navbarBtn:hover{
+	transform: scale(1.2);
+	transition: 0.25s;
+	font-weight: 500;
+	cursor: pointer;
+}
+
+/* 900px */
+@media only screen and (max-width: 900px) {
+	.navbarContainer{
+		width: 75%;
+	}
+}
+
+/* 600px */
+@media only screen and (max-width: 600px) {
+	.navbarContainer{
+		width: 100%;
+	}
+}
+
+/* 450px */
+@media only screen and (max-width: 600px) {
+	nav{
+		display: none;
+	}
+}
