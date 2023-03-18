@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,99 +8,464 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-    rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- Local stylesheet -->
     <link rel="stylesheet" href="./assets/css/styles.css" />
     <title>Rishabh Singh Sahil</title>
-</head>
-<body>
+  </head>
+  <body>
     <nav>
-    <div class="navbarContainer">
-        <button class="navbarBtn">Home</button>
-        <button class="navbarBtn">About</button>
-        <button class="navbarBtn">Services</button>
-        <button class="navbarBtn">Project</button>
-        <button class="navbarBtn">Skills</button>
-        <button class="navbarBtn">Contact</button>
-    </div>
+      <div class="navbarContainer">
+        <a href="#home"><button class="navbarBtn">Home</button></a>
+        <a href="#about"><button class="navbarBtn">About</button></a>
+        <a href="#services"><button class="navbarBtn">Services</button></a>
+        <a href="#projects"><button class="navbarBtn">Project</button></a>
+        <a href="#skills"><button class="navbarBtn">Skills</button></a>
+        <a href="#contact"><button class="navbarBtn">Contact</button></a>
+      </div>
     </nav>
-
-    <div class="landingContainer">
-    <div class="landingContent">
-        <p class="greeting">Namaste, I'm</p>
-        <h1 class="name">Rishabh Singh Sahil</h1>
-        <p class="titles">Graphic designer, Frontend developer & Freelancer</p>
-    </div>
-    </div>
-
-    <div class="aboutMe-container">
-    <div class="image">
-        <img
-        src="./assets/images/rishabh.png"
-        alt="Rishabh Singh Sahil"
-        class="myImage"
-        />
-    </div>
-    <div class="text">
-        <h1 class="aboutMe-heading">About Me & My creative mind 😁</h1>
-        <p class="aboutMe-content">
-        In my pre-final year and pursuing Computer Science Engineering at SRM
-        Institute of Science and Technology Chennai , Tamil Nadu. I'm a UI
-        designer and frontend developer with expertise in creating
-        user-friendly interfaces and building responsive websites. My passion
-        lies in designing visually appealing interfaces that deliver an
-        immersive user experience. I look forward to partnering with you to
-        create exceptional digital experiences.
-        </p>
-    </div>
-    </div>
-
-    <div class="servicesContainer">
-    <h1 class="sectionHeading">Services</h1>
-    <div class="servicesCardContainer">
-        <div class="servicesCard">
-        <img
-            src="./assets/images/card1-img.png"
-            alt="Illustration"
-            class="cardImg"
-        />
-        <h5 class="cardTitle">UI Designer</h5>
-        <p class="cardContent">
-            I create engaging and intuitive user interfaces for websites and
-            applications that prioritize user experience, usability, and visual
-            aesthetics.
-        </p>
+    <section>
+      <div class="landingContainer" id="home">
+        <div class="landingContent">
+          <p class="greeting" data-aos="zoom-in" data-aos-duration="1000">
+            Namaste, I'm
+          </p>
+          <h1
+            class="name"
+            data-aos="zoom-in"
+            data-aos-duration="2000"
+            data-aos-delay="1000"
+            data-aos-once="true"
+          >
+            Rishabh Singh Sahil
+          </h1>
+          <p class="titles">
+            <span class="typed-text">&nbsp</span>
+            <span class="cursor"></span>
+          </p>
         </div>
-        <div class="servicesCard">
-        <img
-            src="./assets/images/card2-img.png"
-            alt="Illustration"
-            class="cardImg"
-        />
-        <h5 class="cardTitle">Frontend Developer</h5>
-        <p class="cardContent">
-            I specialize in designing and building visually appealing and
-            user-friendly websites and applications using my expertise in HTML,
-            CSS, and JavaScript.
-        </p>
+      </div>
+
+      <div class="aboutMe-container" id="about">
+        <div
+          class="image"
+          data-aos="flip-left"
+          data-aos-duration="1000"
+          data-aos-once="true"
+        >
+          <img
+            src="./assets/images/rishabh.png"
+            alt="Rishabh Singh Sahil"
+            class="myImage"
+          />
         </div>
-        <div class="servicesCard">
-        <img
-            src="./assets/images/card3-img.png"
-            alt="Illustration"
-            class="cardImg"
-        />
-        <h5 class="cardTitle">Marketing</h5>
-        <p class="cardContent">
-            Gain hands-on experience in the dynamic world of marketing and
-            develop valuable skills to help propel your career forward with a
-            marketing internship.
-        </p>
+        <div
+          class="text"
+          data-aos="zoom-in"
+          data-aos-duration="2000"
+          data-aos-delay="500"
+          data-aos-once="true"
+        >
+          <h1 class="aboutMe-heading">About me & My creative mind..😁</h1>
+          <p class="aboutMe-content">
+            In my pre-final year and pursuing Computer Science Engineering at
+            SRM Institute of Science and Technology Chennai , Tamil Nadu. I'm a
+            UI designer and frontend developer with expertise in creating
+            user-friendly interfaces and building responsive websites. My
+            passion lies in designing visually appealing interfaces that deliver
+            an immersive user experience. I look forward to partnering with you
+            to create exceptional digital experiences.
+          </p>
+          <a
+            href="https://drive.google.com/file/d/1d-pA19HWp0jORqFlrA858aRYL1vkGFPn/view?usp=sharing"
+            ><button class="resumeDownload">Resume</button></a
+          >
         </div>
-    </div>
-    </div>
-</body>
+      </div>
+
+      <div class="servicesContainer" id="services">
+        <h1
+          class="sectionHeading"
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+          data-aos-once="true"
+        >
+          Services
+        </h1>
+        <div class="servicesCardContainer">
+          <div
+            class="servicesCard"
+            data-aos="zoom-in"
+            data-aos-duration="2000"
+            data-aos-delay="700"
+            data-aos-once="true"
+          >
+            <img
+              src="./assets/images/card1-img.png"
+              alt="Illustration"
+              class="cardImg"
+            />
+            <h5 class="cardTitle">UI Designer</h5>
+            <p class="cardContent">
+              I create engaging and intuitive user interfaces for websites and
+              applications that prioritize user experience, usability, and
+              visual aesthetics.
+            </p>
+          </div>
+          <div
+            class="servicesCard"
+            data-aos="zoom-in"
+            data-aos-duration="2000"
+            data-aos-delay="1400"
+            data-aos-once="true"
+          >
+            <img
+              src="./assets/images/card2-img.png"
+              alt="Illustration"
+              class="cardImg"
+            />
+            <h5 class="cardTitle">Frontend Developer</h5>
+            <p class="cardContent">
+              I specialize in designing and building visually appealing and
+              user-friendly websites and applications using my expertise in
+              HTML, CSS, and JavaScript.
+            </p>
+          </div>
+          <div
+            class="servicesCard"
+            data-aos="zoom-in"
+            data-aos-duration="2000"
+            data-aos-delay="2100"
+            data-aos-once="true"
+          >
+            <img
+              src="./assets/images/card3-img.png"
+              alt="Illustration"
+              class="cardImg"
+            />
+            <h5 class="cardTitle">Marketing</h5>
+            <p class="cardContent">
+              Gain hands-on experience in the dynamic world of marketing and
+              develop valuable skills to help propel your career forward with a
+              marketing internship.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="projectsContainer" id="projects">
+        <h1
+          class="sectionHeading"
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+          data-aos-once="true"
+        >
+          Projects
+        </h1>
+        <div class="projectsCardContainer">
+          <div
+            class="servicesCard projectsCard"
+            data-aos="zoom-in"
+            data-aos-duration="2000"
+            data-aos-delay="700"
+            data-aos-once="true"
+          >
+            <h5 class="cardTitle projectsCardTitle">YouTube Clone</h5>
+            <span class="projectDate">November 2020</span>
+            <p class="cardContent">
+              Created a responsive web application and learned about the
+              application of HTML/CSS and learned more about HTML tags from this
+              project, in addition to understanding how classes sections
+              divided.
+            </p>
+            <a href="https://github.com/sahil0029/YouTube-Clone"
+              ><img
+                src="./assets/images/github.png"
+                alt="Link_to_project"
+                class="projectCardImg"
+            /></a>
+          </div>
+          <div
+            class="servicesCard projectsCard"
+            data-aos="zoom-in"
+            data-aos-duration="2000"
+            data-aos-delay="1400"
+            data-aos-once="true"
+          >
+            <h5 class="cardTitle projectsCardTitle">Memory Game</h5>
+            <span class="projectDate">February 2021</span>
+            <p class="cardContent">
+              A browser-based card matching game that tests the player's memory
+              and concentration. The game uses JavaScript to keep track of
+              scores and JavaScript's event listeners for the user to play the
+              game.
+            </p>
+            <a href="https://github.com/sahil0029/Memory-Game-Match"
+              ><img
+                src="./assets/images/github.png"
+                alt="Link_to_project"
+                class="projectCardImg"
+            /></a>
+          </div>
+          <div
+            class="servicesCard projectsCard"
+            data-aos="zoom-in"
+            data-aos-duration="2000"
+            data-aos-delay="2100"
+            data-aos-once="true"
+          >
+            <h5 class="cardTitle projectsCardTitle">E-commerce Website</h5>
+            <span class="projectDate">May 2021</span>
+            <p class="cardContent">
+              Created an e-commerce website with a robust shopping cart, product
+              catalog, search functionality, customer account management, and
+              order fulfillment features, while ensuring a seamless user
+              experience.
+            </p>
+            <a href="https://github.com/sahil0029/E-commerce-Watch-Website-"
+              ><img
+                src="./assets/images/github.png"
+                alt="Link_to_project"
+                class="projectCardImg"
+            /></a>
+          </div>
+        </div>
+        <div class="projectsCardContainer-bottom">
+          <div
+            class="servicesCard projectsCard"
+            data-aos="zoom-in"
+            data-aos-duration="2000"
+            data-aos-delay="2800"
+            data-aos-once="true"
+          >
+            <h5 class="cardTitle projectsCardTitle">Mini-security System</h5>
+            <span class="projectDate">July 2021</span>
+            <p class="cardContent">
+              The security system project is a computer program written in the
+              C++ programming language. It is designed to provide enhanced
+              security for various environments such as homes, offices, and
+              other buildings.
+            </p>
+            <a href="https://github.com/sahil0029/Security-System-cpp"
+              ><img
+                src="./assets/images/github.png"
+                alt="Link_to_project"
+                class="projectCardImg"
+            /></a>
+          </div>
+          <div
+            class="servicesCard projectsCard"
+            data-aos="zoom-in"
+            data-aos-duration="2000"
+            data-aos-delay="2800"
+            data-aos-once="true"
+          >
+            <h5 class="cardTitle projectsCardTitle">Department Newsletter</h5>
+            <span class="projectDate">May 2022</span>
+            <p class="cardContent">
+              Collaborated with SRM and designed a CSE department newsletter on
+              Figma. The newsletter features a modern and sleek design with a
+              focus on highlighting departmental achievements, upcoming events,
+              and student spotlights.
+            </p>
+            <a
+              href="https://drive.google.com/file/d/1ZOF7fQWd2ar2AIesfMHBNu1kdpsupXZt/view?usp=sharing"
+              ><img
+                src="./assets/images/link.png"
+                alt="Link_to_project"
+                class="projectCardImg"
+            /></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="skillsContainer" id="skills">
+        <h1
+          class="sectionHeading"
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+          data-aos-once="true"
+        >
+          Skills
+        </h1>
+        <div
+          class="skillsIconsContainer"
+          data-aos="zoom-in"
+          data-aos-duration="2000"
+        >
+          <img src="./assets/images/cpp.png" alt="Cpp" class="skillsIcon" />
+          <img
+            src="./assets/images/python.png"
+            alt="Python"
+            class="skillsIcon"
+          />
+          <img
+            src="./assets/images/html-5.png"
+            alt="HTML5"
+            class="skillsIcon"
+          />
+          <img src="./assets/images/css-3.png" alt="CSS3" class="skillsIcon" />
+          <img src="./assets/images/git.png" alt="Git" class="skillsIcon" />
+          <img
+            src="./assets/images/javascript.png"
+            alt="JavaScript"
+            class="skillsIcon"
+          />
+          <img src="./assets/images/figma.png" alt="Figma" class="skillsIcon" />
+          <img
+            src="./assets/images/illustrator.png"
+            alt="Illustrator"
+            class="skillsIcon"
+          />
+          <img
+            src="./assets/images/photoshop.png"
+            alt="Photoshop"
+            class="skillsIcon"
+          />
+        </div>
+      </div>
+
+      <div class="workExperienceContainer">
+        <h1
+          class="sectionHeading"
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+          data-aos-once="true"
+        >
+          Work Experience
+        </h1>
+        <div class="workExperienceCardContainer">
+          <div
+            class="workExperienceCard"
+            data-aos="zoom-in"
+            data-aos-duration="2000"
+            data-aos-delay="700"
+            data-aos-once="true"
+          >
+            <img
+              src="./assets/images/experienceCardImg-2.png"
+              alt="Experience Card Image"
+              class="workExpCardImg"
+            />
+            <h4 class="position">UI Designing Intern</h4>
+            <p class="experienceDetails">YouMeWho | May 2022 - July 2022</p>
+          </div>
+          <div
+            class="workExperienceCard"
+            data-aos="zoom-in"
+            data-aos-duration="2000"
+            data-aos-delay="900"
+            data-aos-once="true"
+          >
+            <img
+              src="./assets/images/experienceCardImg-1.png"
+              alt="Experience Card Image"
+              class="workExpCardImg"
+            />
+            <h4 class="position">UI Designing Intern</h4>
+            <p class="experienceDetails">
+              DesignCode Lab | Oct 2022 - Dec 2022
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footerContainer" id="contact">
+        <h1 class="sectionHeading">Contact</h1>
+        <p class="footerText">
+          Let's collaborate and bring your ideas to life - drop me a line.
+        </p>
+        <div class="footerIconsContainer">
+          <a href="https://www.linkedin.com/in/rishabhsinghsahil"
+            ><img
+              src="./assets/images/linkedin.png"
+              alt="LinkedIn"
+              class="footerIcon"
+          /></a>
+          <a href="https://www.instagram.com/frankie_sahil_/"
+            ><img
+              src="./assets/images/instagram.png"
+              alt="Instagram"
+              class="footerIcon"
+          /></a>
+          <a href="https://github.com/sahil0029"
+            ><img
+              src="./assets/images/github.png"
+              alt="GitHub"
+              class="footerIcon"
+          /></a>
+          <a href="https://dribbble.com/frankie_sahil"
+            ><img
+              src="./assets/images/dribble.png"
+              alt="Dribbble"
+              class="footerIcon"
+          /></a>
+          <a href="mailto:rs4230@srmist.edu.in"
+            ><img
+              style="height: auto; width: auto"
+              src="./assets/images/gmail.png"
+              alt="Gmail"
+              class="footerIcon"
+          /></a>
+        </div>
+      </div>
+      <div class="designedAndDeveloped">
+        <p class="designedAndDevelopedText">
+          Designed and developed by Rishabh Singh Sahil
+        </p>
+      </div>
+    </section>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+      const typedTextSpan = document.querySelector(".typed-text");
+      const cursorSpan = document.querySelector(".cursor");
+
+      const textArray = ["Graphic designer, Frontend developer & Freelancer."];
+      const typingDelay = 100;
+      const erasingDelay = 100;
+      const newTextDelay = 2000;
+      let textArrayIndex = 0;
+      let charIndex = 0;
+
+      function type() {
+        if (charIndex < textArray[textArrayIndex].length) {
+          if (!cursorSpan.classList.contains("typing"))
+            cursorSpan.classList.add("typing");
+          typedTextSpan.textContent +=
+            textArray[textArrayIndex].charAt(charIndex);
+          charIndex++;
+          setTimeout(type, typingDelay);
+        } else {
+          cursorSpan.classList.remove("typing");
+          setTimeout(erase, newTextDelay);
+        }
+      }
+
+      function erase() {
+        if (charIndex > 0) {
+          if (!cursorSpan.classList.contains("typing"))
+            cursorSpan.classList.add("typing");
+          typedTextSpan.textContent = textArray[textArrayIndex].substring(
+            0,
+            charIndex - 1
+          );
+          charIndex--;
+          setTimeout(erase, erasingDelay);
+        } else {
+          cursorSpan.classList.remove("typing");
+          textArrayIndex++;
+          if (textArrayIndex >= textArray.length) textArrayIndex = 0;
+          setTimeout(type, typingDelay + 1100);
+        }
+      }
+
+      document.addEventListener("DOMContentLoaded", function () {
+        if (textArray.length) setTimeout(type, newTextDelay + 250);
+      });
+    </script>
+  </body>
 </html>
-
