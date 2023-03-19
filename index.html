@@ -69,20 +69,22 @@
           data-aos-delay="500"
           data-aos-once="true"
         >
-          <h1 class="aboutMe-heading">About me & My creative mind..😁</h1>
+          <h1 class="aboutMe-heading">About me</h1>
           <p class="aboutMe-content">
-            In my pre-final year and pursuing Computer Science Engineering at
-            SRM Institute of Science and Technology Chennai , Tamil Nadu. I'm a
+            I am in my pre-final year, pursuing Computer Science Engineering at
+            SRM Institute of Science and Technology Chennai , Tamil Nadu. A
             UI designer and frontend developer with expertise in creating
             user-friendly interfaces and building responsive websites. My
             passion lies in designing visually appealing interfaces that deliver
             an immersive user experience. I look forward to partnering with you
             to create exceptional digital experiences.
           </p>
-          <a
-            href="https://drive.google.com/file/d/1d-pA19HWp0jORqFlrA858aRYL1vkGFPn/view?usp=sharing"
-            ><button class="resumeDownload">Resume</button></a
-          >
+          <div class="resumeButtonContainer">
+            <a
+              href="https://drive.google.com/file/d/1d-pA19HWp0jORqFlrA858aRYL1vkGFPn/view?usp=sharing"
+              ><button class="resumeDownload">Resume</button></a
+            >
+          </div>
         </div>
       </div>
 
@@ -100,7 +102,7 @@
             class="servicesCard"
             data-aos="zoom-in"
             data-aos-duration="2000"
-            data-aos-delay="700"
+            data-aos-delay="500"
             data-aos-once="true"
           >
             <img
@@ -119,7 +121,7 @@
             class="servicesCard"
             data-aos="zoom-in"
             data-aos-duration="2000"
-            data-aos-delay="1400"
+            data-aos-delay="900"
             data-aos-once="true"
           >
             <img
@@ -138,7 +140,7 @@
             class="servicesCard"
             data-aos="zoom-in"
             data-aos-duration="2000"
-            data-aos-delay="2100"
+            data-aos-delay="1100"
             data-aos-once="true"
           >
             <img
@@ -170,7 +172,7 @@
             class="servicesCard projectsCard"
             data-aos="zoom-in"
             data-aos-duration="2000"
-            data-aos-delay="700"
+            data-aos-delay="500"
             data-aos-once="true"
           >
             <h5 class="cardTitle projectsCardTitle">YouTube Clone</h5>
@@ -192,7 +194,7 @@
             class="servicesCard projectsCard"
             data-aos="zoom-in"
             data-aos-duration="2000"
-            data-aos-delay="1400"
+            data-aos-delay="700"
             data-aos-once="true"
           >
             <h5 class="cardTitle projectsCardTitle">Memory Game</h5>
@@ -214,7 +216,7 @@
             class="servicesCard projectsCard"
             data-aos="zoom-in"
             data-aos-duration="2000"
-            data-aos-delay="2100"
+            data-aos-delay="900"
             data-aos-once="true"
           >
             <h5 class="cardTitle projectsCardTitle">E-commerce Website</h5>
@@ -238,7 +240,7 @@
             class="servicesCard projectsCard"
             data-aos="zoom-in"
             data-aos-duration="2000"
-            data-aos-delay="2800"
+            data-aos-delay="1100"
             data-aos-once="true"
           >
             <h5 class="cardTitle projectsCardTitle">Mini-security System</h5>
@@ -260,7 +262,7 @@
             class="servicesCard projectsCard"
             data-aos="zoom-in"
             data-aos-duration="2000"
-            data-aos-delay="2800"
+            data-aos-delay="1300"
             data-aos-once="true"
           >
             <h5 class="cardTitle projectsCardTitle">Department Newsletter</h5>
@@ -405,7 +407,6 @@
           /></a>
           <a href="mailto:rs4230@srmist.edu.in"
             ><img
-              style="height: auto; width: auto"
               src="./assets/images/gmail.png"
               alt="Gmail"
               class="footerIcon"
@@ -424,7 +425,9 @@
       const typedTextSpan = document.querySelector(".typed-text");
       const cursorSpan = document.querySelector(".cursor");
 
-      const textArray = ["Graphic designer, Frontend developer & Freelancer."];
+      const textArray = [
+        "Graphic designer, Frontend developer , UI/UX Designer & Freelancer.",
+      ];
       const typingDelay = 100;
       const erasingDelay = 100;
       const newTextDelay = 2000;
